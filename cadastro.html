@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .form {
+            width: 40%;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .form p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .form input {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .form button {
+            width: 100%;
+            height: 40px;
+            background-color: #0099ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form a {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .social {
+            width: 40%;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .social h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .social p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .social img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .social button {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        .social button.facebook {
+            background-color: #3b5998;
+            color: white;
+        }
+
+        .social button.google {
+            background-color: #db4437;
+            color: white;
+        }
+
+        .social button.twitter {
+            background-color: #1da1f2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./img/local_clique_logo.jpg" alt="Logotipo LocalClique">
+        <a href="index.html">Voltar para a página inicial</a>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form">
+                <h1>Cadastre-se no LocalClique e apoie o comércio local da sua região</h1>
+                <p>Ao se cadastrar, você terá acesso a ofertas exclusivas, dicas de consumo consciente e informações sobre os estabelecimentos locais que fazem parte da rede LocalClique</p>
+                <form>
+                    <input type="text" name="name" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <input type="text" name="location" placeholder="Localização" required>
+                    <button type="submit">Cadastrar</button>
+                    <a href="#">Política de privacidade</a>
+                </form>
+            </div>
+            <div class="social">
+                <!--Em fase de criação dos arquivos de imagem ("facebook.png", "google.png", "twitter.png") e o caminho do arquivo CSS ("style.css") pelos nomes e caminhos reais dos seus recursos.--->
+                <h1>Ou cadastre-se com uma rede social</h1>
+                <p>Não se preocupe, nós não compartilharemos seus dados com ninguém sem a sua autorização</p>
+                <button class="facebook"><img src="facebook.png" alt="Facebook">Cadastre-se com o Facebook</button>
+                <button class="google"><img src="google.png" alt="Google">Cadastre-se com o Google</button>
+                <button class="twitter"><img src="twitter.png" alt="Twitter">Cadastre-se com o Twitter</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
