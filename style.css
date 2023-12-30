@@ -87,7 +87,7 @@ section {
     padding: 8px;
     margin-bottom: 0;
   }
-  
+
   .logo {
     border-radius: 50%;
     width: 100px;
@@ -103,7 +103,7 @@ section {
 
   header h3 {
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 0.2em;
   }
@@ -143,8 +143,18 @@ section {
   
   section {
     display: flex;
-    padding: 50px;
+    padding: 20px;
     justify-content: space-between;
+  }
+
+  @media (max-width: 768px) {
+    /* Estilos para telas com até 768px de largura */
+    .sidebar {
+      display: none; /* Ocultar barra lateral em telas menores */
+    }
+    section {
+      padding: 20px; /* Ajustar preenchimento */
+    }
   }
   
   .sidebar ul {
@@ -163,10 +173,12 @@ section {
 
   .banner-destaque {
     border-radius: 10px;
+    width: 100%;
+    height: auto;
   }
   
   * {
-    font-size: 16px;
+    font-size: 1rem;
   }
   
   h1, h2, h3, h4, h5, h6 {
