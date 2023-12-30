@@ -105,13 +105,14 @@ section {
     display: flex;
     align-items: center;
     color: white;
+    font-size: 150%;
   }
 
   header h3 {
-    font-family: Poppins;
-    font-size: 100%;
-    letter-spacing: auto;
+    font-family: serif;
+  
   }
+
   
   nav {
     background-color: #CC7200;
