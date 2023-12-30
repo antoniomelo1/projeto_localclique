@@ -146,16 +146,6 @@ section {
     padding: 20px;
     justify-content: space-between;
   }
-
-  @media (max-width: 768px) {
-    /* Estilos para telas com até 768px de largura */
-    .sidebar {
-      display: none; /* Ocultar barra lateral em telas menores */
-    }
-    section {
-      padding: 20px; /* Ajustar preenchimento */
-    }
-  }
   
   .sidebar ul {
     display: flex;
