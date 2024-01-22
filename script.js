@@ -25,29 +25,40 @@ for (let i = 0; i < redeSociais.length; i++) {
   });
 }
 
-function toggleFormVisibility() {
-  var formulario = document.getElementById("formulario-contato");
-  formulario.classList.toggle("mostrar-formulario");
+function onUsernameChange() {
+  document.getElementById('username-error').innerText = '';
+  document.getElementById('username').classList.remove('highlight');
 }
 
-var botaoMostrarFormulario = document.getElementById("botao-mostrar-formulario");
-botaoMostrarFormulario.addEventListener("mouseenter", toggleFormVisibility);
+function onEmailChange() {
+  document.getElementById('email-error').innerText = '';
+  document.getElementById('email').classList.remove('highlight');
+}
 
-function enviarContato(event) {
-  event.preventDefault();
+function validateForm() {
+  document.getElementById('username-error').innerText = '';
+  document.getElementById('email-error').innerText = '';
+  document.getElementById('username').classList.remove('highlight');
+  document.getElementById('email').classList.remove('highlight');
 
-  // Recupere os valores do formulário
-  var nome = document.getElementById("nome").value;
-  var email = document.getElementById("email").value;
-  var mensagem = document.getElementById("mensagem").value;
+  var username = document.getElementById('username').value;
+  var email = document.getElementById('email').value;
 
-  // Simplesmente imprime os valores no console neste exemplo
-  console.log("Nome: " + nome);
-  console.log("E-mail: " + email);
-  console.log("Mensagem: " + mensagem);
+  if (username.trim() === '') {
+      document.getElementById('username-error').innerText = 'Por favor, insira um nome de usuário';
+      document.getElementById('username').classList.add('highlight');
+  }
 
-  // Poderia enviar os dados para um servidor aqui usando AJAX ou Fetch API
+  if (email.trim() === '') {
+      document.getElementById('email-error').innerText = 'Por favor, insira um endereço de e-mail';
+      document.getElementById('email').classList.add('highlight');
+  } else if (!isValidEmail(email)) {
+      document.getElementById('email-error').innerText = 'Por favor, insira um endereço de e-mail válido';
+      document.getElementById('email').classList.add('highlight');
+  }
+}
 
-  // Opcional: fechar o formulário após o envio
-  toggleFormVisibility();
+function isValidEmail(email) {
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
 }
