@@ -194,3 +194,36 @@ section {
     padding: 8px;
     margin-bottom: 12px;
   }
+
+  #formulario-contato {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  #formulario-contato {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Adicione uma classe para mostrar o formulário */
+  #formulario-contato.mostrar-formulario {
+    max-height: 500px; /* ou outra altura desejada */
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+  }
+  
+  button[onclick] {
+    margin: 10px; /* Adiciona espaço ao redor do botão */
+  }

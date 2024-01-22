@@ -25,29 +25,14 @@ for (let i = 0; i < redeSociais.length; i++) {
   });
 }
 
-function toggleFormVisibility() {
-  var formulario = document.getElementById("formulario-contato");
-  formulario.classList.toggle("mostrar-formulario");
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const formulario = document.getElementById('cadastroForm');
 
-var botaoMostrarFormulario = document.getElementById("botao-mostrar-formulario");
-botaoMostrarFormulario.addEventListener("mouseenter", toggleFormVisibility);
+    formulario.addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
 
-function enviarContato(event) {
-  event.preventDefault();
-
-  // Recupere os valores do formulário
-  var nome = document.getElementById("nome").value;
-  var email = document.getElementById("email").value;
-  var mensagem = document.getElementById("mensagem").value;
-
-  // Simplesmente imprime os valores no console neste exemplo
-  console.log("Nome: " + nome);
-  console.log("E-mail: " + email);
-  console.log("Mensagem: " + mensagem);
-
-  // Poderia enviar os dados para um servidor aqui usando AJAX ou Fetch API
-
-  // Opcional: fechar o formulário após o envio
-  toggleFormVisibility();
-}
+        // Adicione aqui o código para processar os dados do formulário, por exemplo, enviar para o servidor.
+        // Você pode acessar os valores dos campos usando formulario.nomeDoCampo.value
+        // Exemplo: const nomeNegocio = formulario.nomeNegocio.value;
+    });
+});

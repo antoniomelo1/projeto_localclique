@@ -14,6 +14,7 @@
 </head>
 <body>
     <header>
+      <div class="wrapper">
         <img src="./img/logo.jpg" alt="Logotipo LocalClique" class="logo">
         <h3>Comércio perto, vida melhor!</h3>
         <nav>
@@ -25,6 +26,7 @@
             <li><a href="index.html">Início</a></li>
           </ul>
         </nav>
+      </div>  
     </header>
     <main>
         <div id="carouselExample" class="carousel slide" data-ride="carousel">
@@ -53,37 +55,31 @@
             <a href="https://www.instagram.com/localclique77/" target="_blank"><img src="img/instagram.png" alt="ícone do instagram"/></a>
           </div>
         <section>
-        <form action="">
-            <h2>Formulário de cadastro</h2>
-            <label for="username">*Username:</label>
-            <input type="text" id="username" name="username">
-            <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
-        
-            <label for="email">*E-mail:</label>
-            <input type="email" id="email" name="email">
-            <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
-        
-            <label for="idade">Idade:</label>
-            <input type="number" id="idade" name="idade">
-            <p id="idade-helper" class="helper-text">Mensagem de ajuda</p>
-        
-            <label for="senha">*Senha:</label>
-            <input type="password" id="senha" name="senha">
-            <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
-        
-            <label for="confirma-senha">*Confirmar senha:</label>
-            <input type="password" id="confirma-senha" name="confirma-senha">
-            <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
-        
-            <button type="submit">Enviar</button>
+            <form id="cadastroForm">
+              <label for="nomeNegocio">Nome do Negócio:</label>
+              <input type="text" id="nomeNegocio" name="nomeNegocio" required>
+      
+              <label for="tipoNegocio">Tipo de Negócio:</label>
+              <input type="text" id="tipoNegocio" name="tipoNegocio" required>
+      
+              <label for="endereco">Endereço:</label>
+              <input type="text" id="endereco" name="endereco" required>
+      
+              <label for="telefone">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone" required>
+      
+              <label for="descricao">Descrição do Negócio:</label>
+              <textarea id="descricao" name="descricao" rows="4" required></textarea>
+      
+              <button type="submit">Enviar</button>
           </form>
-            <div class="sidebar">
-              <ul>
-                <li><a href="https://www.google.com.br/?hl=pt-BR" target="_blank"><img src="./img/banner4.png" alt="banner"/></a></li>
-                <li><a href="https://prozeducacao.com.br/tipo_de_curso/cursos-tecnicos/tecnologia/" target="_blank"><img src="./img/banner5.png" alt="banner"/></a></li>
-                <li><a href="https://www.w3schools.com/" target="_blank"><img src="./img/banner6.png" alt="banner"/></a></li>
-              </ul>
-            </div>
+              <div class="sidebar">
+                <ul>
+                  <li><a href="https://www.google.com.br/?hl=pt-BR" target="_blank"><img src="./img/banner4.png" alt="banner"/></a></li>
+                  <li><a href="https://prozeducacao.com.br/tipo_de_curso/cursos-tecnicos/tecnologia/" target="_blank"><img src="./img/banner5.png" alt="banner"/></a></li>
+                  <li><a href="https://www.w3schools.com/" target="_blank"><img src="./img/banner6.png" alt="banner"/></a></li>
+                </ul>
+              </div>
             </section>
     </main>
 
