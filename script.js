@@ -25,40 +25,7 @@ for (let i = 0; i < redeSociais.length; i++) {
   });
 }
 
-function onUsernameChange() {
-  document.getElementById('username-error').innerText = '';
-  document.getElementById('username').classList.remove('highlight');
-}
-
-function onEmailChange() {
-  document.getElementById('email-error').innerText = '';
-  document.getElementById('email').classList.remove('highlight');
-}
-
-function validateForm() {
-  document.getElementById('username-error').innerText = '';
-  document.getElementById('email-error').innerText = '';
-  document.getElementById('username').classList.remove('highlight');
-  document.getElementById('email').classList.remove('highlight');
-
-  var username = document.getElementById('username').value;
-  var email = document.getElementById('email').value;
-
-  if (username.trim() === '') {
-      document.getElementById('username-error').innerText = 'Por favor, insira um nome de usuário';
-      document.getElementById('username').classList.add('highlight');
-  }
-
-  if (email.trim() === '') {
-      document.getElementById('email-error').innerText = 'Por favor, insira um endereço de e-mail';
-      document.getElementById('email').classList.add('highlight');
-  } else if (!isValidEmail(email)) {
-      document.getElementById('email-error').innerText = 'Por favor, insira um endereço de e-mail válido';
-      document.getElementById('email').classList.add('highlight');
-  }
-}
-
-function isValidEmail(email) {
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
+function toggleFormVisibility() {
+  var formulario = document.getElementById('formulario-contato');
+  formulario.classList.toggle('mostrando');
 }
