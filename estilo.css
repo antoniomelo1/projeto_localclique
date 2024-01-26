@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300;700&display=swap');
+
+#barra_superior{
+    background-color: rgb(234, 234, 192);
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    margin: 0px;
+    font-family: Marhey, sans-serif, Arial;
+    background-image: url(imagens/carrinhuuusjpg);
+}
+
+#logo{
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+#caixa_menus{
+    /*Mostrar divs lado a lado*/
+    display: flex;
+    margin-right: 100px;
+    align-items: center;
+}
+
+.menus{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menus:hover{
+    background-color: rgb(227, 228, 232);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px 0px 30px 30px;
+}
+
+.menu_ativo{
+    background-color: yellowgreen;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px 0px 30px 30px;
+  }
+
+#banner{
+    background-image: url(imagens/apertodemao.jpg);
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;  
+}
+#conteudo_banner{
+    background-color: rgb(239, 239, 159);
+    height: 300px;
+    width: 800px;
+    margin-bottom: 100px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 100px 30px 100px 30px;
+}
+
+#titulo{
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    line-height: 90px;
+}
+
+#mensagem{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#nossos_servicos{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: Marhey;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+
+.nossos_servicos2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex: wrap;
+    margin-bottom: 100px;
+    color: white;
+}
+#criancas1{
+    background-image: url(imagens/celularmao.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 400px;
+    border-radius: 50px 50px 50px 50px;
+
+}
+#conteudo2{
+    width: 600px;
+    margin-left: 50px;
+}
+
+#criancas2{
+    background-image: url(imagens/depositphotos_138096878-stock-photo-salesperson-smiling-in-coffee-shop.jpg);
+    height: 350px;
+    width: 1000px;
+    background-size: cover;
+    border-radius: 50px 0px 0px 50px;
+    background-color: rgb(110, 253, 110);
+}
+
+#conteudo3{
+    width: 500px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(110, 253, 110);
+    border-radius: 0px 50px 50px 0px;
+    color: white;
+}
+
+#rodape{
+    background-color: rgb(251, 251, 194);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+
+    /* Alinhar na vertical*/
+align-items: center;
+
+/* alinhar na horizontal */
+justify-content: center;
+}
+
+
+#conteudo_rodape1{
+    margin-left: 70px;
+    width: 35%;
+}
+
+
+#conteudo_rodape2{
+    width: 25%;
+}
+
+
+#conteudo_rodape3{
+    width: 25%;
+    margin-right: 80px;
+}
+
+#redes_sociais i{
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+#conteudo_rodape4{
+    width: 100%;
+}
