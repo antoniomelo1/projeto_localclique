@@ -14,71 +14,71 @@
 </head>
 <body>
   <header>
-      <div class="wrapper">
-        <img src="./img/logo.jpg" alt="Logotipo LocalClique" class="logo">
-        <h3>Comércio perto, vida melhor!</h3>
+      <div class="nav">
         <nav>
           <ul>
             <li><a href="sobre_nos.html">Sobre Nós</a></li>
             <li><a href="eventos.html">Eventos</a></li>
+            <img src="./img/logo.jpg" alt="Logotipo LocalClique" class="logo">
             <li><a href="noticias.html">Notícias</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
           </ul>
         </nav>
       </div>
   </header>
-  <main>
-    <div id="carouselExample" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <img class="d-block w-100" src="./img/banner1.png" alt="Primeira imagem">
-          </div>
-          <div class="carousel-item">
-              <img class="d-block w-100" src="./img/banner2.png" alt="Segunda imagem">
-          </div>
-          <div class="carousel-item">
-              <img class="d-block w-100" src="./img/banner3.png" alt="Segunda imagem">
-          </div>
+<main>
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/banner1.png" alt="Primeira imagem">
       </div>
-      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Próximo</span>
-      </a>  
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./img/banner2.png" alt="Segunda imagem">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./img/banner3.png" alt="Segunda imagem">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>  
   </div>
-        <div class="redes-sociais">
-          <a href="https://www.facebook.com/Localclique/" target="_blank"><img src="img/facebook.png" alt="ícone do facebook"/></a>
-          <a href="https://www.instagram.com/localclique77/" target="_blank"><img src="img/instagram.png" alt="ícone do instagram"/></a>
-          <div class="container">
-            <h3>Entre em Contato</h3>
-            <button id="botao-mostrar-formulario" onclick="toggleFormVisibility()">Mostrar Formulário</button>
-            <form id="formulario-contato" onsubmit="enviarContato(event)">
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" required>
-              <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" required>
-              <label for="mensagem">Mensagem:</label>
-              <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-              <button type="submit">Enviar Mensagem</button>
-            </form>
-          </div>
+    <div class="redes-sociais">
+      <a href="https://www.facebook.com/Localclique/" target="_blank"><img src="img/facebook.png" alt="ícone do facebook"/></a>
+      <a href="https://www.instagram.com/localclique77/" target="_blank"><img src="img/instagram.png" alt="ícone do instagram"/></a>
+    </div>
+      <section class="destaque-empresas">
+        <div class="empresa">
+          <img src="caminho/para/logo1.jpg" alt="Logo Empresa 1">
+          <h3>Nome da Empresa 1</h3>
+          <p>Descrição breve sobre a Empresa 1. Pode incluir 
+              informações sobre produtos, serviços e valores.</p>
+          <a href="#">Saiba mais</a>
         </div>
-      <section>
-      <div>
-        <h2>O comércio local é essencial para a economia e a comunidade</h2>
-        <p>O comércio local é uma parte importante da economia e da 
-          comunidade. Ele gera empregos, estimula o crescimento econômico 
-          e<br> fortalece os laços sociais.
-          Econômicamente, o comércio local contribui para a geração de empregos 
-          e renda. As empresas locais contratam<br> mais funcionários do que as 
-          grandes corporações, e eles pagam salários mais altos. Isso significa 
-          que o comércio local ajuda a manter a<br> economia local forte e a gerar 
-          oportunidades de emprego para os moradores.</p>
-          <img src="./img/banner8.png" alt="banner" class="banner-destaque">
-        </div>
+      <div class="empresa">
+          <img src="caminho/para/logo2.jpg" alt="Logo Empresa 2">
+          <h3>Nome da Empresa 2</h3>
+          <p>Descrição breve sobre a Empresa 2. Pode incluir informações 
+              sobre produtos, serviços e valores.</p>
+          <a href="#">Saiba mais</a>
+      </div>
+    </section>
+    <div class="comercioLocal">
+      <h2>O comércio local é essencial para a economia e a comunidade</h2>
+      <p>O comércio local é uma parte importante da economia e da 
+      comunidade. Ele gera empregos, estimula o crescimento econômico 
+      e<br> fortalece os laços sociais.
+      Econômicamente, o comércio local contribui para a geração de empregos 
+      e renda. As empresas locais contratam<br> mais funcionários do que as 
+      grandes corporações, e eles pagam salários mais altos. Isso significa 
+      que o comércio local ajuda a manter a<br> economia local forte e a gerar 
+      oportunidades de emprego para os moradores.</p>
+      <img src="./img/banner8.png" alt="banner" class="banner-destaque">
       <div class="sidebar">
         <ul>
           <li><a href="https://www.google.com.br/?hl=pt-BR" target="_blank"><img src="./img/banner4.png" alt="banner"/></a></li>
@@ -86,14 +86,25 @@
           <li><a href="https://www.w3schools.com/" target="_blank"><img src="./img/banner6.png" alt="banner"/></a></li>
         </ul>
       </div>
-      </section>
-
-    </main>
+    </div>
+</main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+    <div class="container">
+      <h3>Entre em Contato</h3>
+      <button id="botao-mostrar-formulario" onclick="toggleFormVisibility()">Mostrar Formulário</button>
+      <form id="formulario-contato" onsubmit="enviarContato(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
   <footer>
   <p>&copy; 2023 LocalClique. Todos os direitos reservados.</p>
   </footer>

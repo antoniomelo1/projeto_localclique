@@ -1,75 +1,14 @@
-/** {
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
+
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+  ** {
     font-family: "Maven Pro", sans-serif;
-    margin: 0;
-    padding: 0;
 }
-
-header {
-    background-color: #964B00;
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    margin-bottom: 0;
-}
-
-.logo {
-    border-radius: 50%;
-}
-
-nav {
-    background-color: #964B00;
-    margin-right: 20px;
-}
-
-ul {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-nav ul li {
-    list-style-type: none;
-    margin-left: 20px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: white;
-  }
-
-footer {
-    background-color: #964B00;
-    display: flex;
-    justify-content: center;
-    padding: 8px;
-    margin-bottom: 12px;
-}
-
-section {
-    display: flex;
-    padding: 50px;
-    justify-content: space-between;
-}
-
-.sidebar ul {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .sidebar ul li img {
-    width: 100%;
-    height: auto;
-  }
-
-  .sidebar ul li img {
-    border: 15px solid #964B00;
-  }
-
-  li {
-    list-style-type: none;
-  }
-  */
-
 
   html body {
     width: 100%;
@@ -94,9 +33,9 @@ section {
     padding: 0;
   }
   
-  .wrapper {
+  .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     margin-bottom: 0.5%;
     margin-top: 0.5%;
   }
@@ -119,6 +58,7 @@ section {
   ul {
     display: flex;
     align-items: center;
+
     height: 100%;
     margin-right: 20px;
   }
@@ -126,7 +66,8 @@ section {
   nav ul li {
     display: flex;
     list-style-type: none;
-    margin-left: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
   
   ul li a {
@@ -208,7 +149,7 @@ section {
   
   /* Adicione uma classe para mostrar o formulário */
   #formulario-contato.mostrar-formulario {
-    max-height: 500px; /* ou outra altura desejada */
+    max-height: 250px; /* ou outra altura desejada */
     transition: max-height 0.3s ease-in-out;
   }
 
