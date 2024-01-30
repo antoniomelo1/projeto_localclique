@@ -36,3 +36,57 @@ document.addEventListener('DOMContentLoaded', function() {
         // Exemplo: const nomeNegocio = formulario.nomeNegocio.value;
     });
 });
+
+function validarFormulario() {
+  var nomeNegocio = document.getElementById('nomeNegocio').value;
+  var tipoNegocio = document.getElementById('tipoNegocio').value;
+  var endereco = document.getElementById('endereco').value;
+  var telefone = document.getElementById('telefone').value;
+  var descricao = document.getElementById('descricao').value;
+
+  if (!nomeNegocio || !tipoNegocio || !endereco || !telefone || !descricao) {
+    exibirPopup();
+    return false; // Impede o envio do formulário se algum campo estiver vazio
+  }
+
+  return true; // Permite o envio do formulário se todos os campos estiverem preenchidos
+}
+
+function exibirPopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'block';
+}
+
+function fecharPopup() {
+  var popup = document.getElementById('popup');
+  popup.style.display = 'none';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtém todos os campos de entrada do formulário
+  var camposObrigatorios = document.querySelectorAll('input[required], textarea[required]');
+
+  // Adiciona um ouvinte de evento para cada campo
+  camposObrigatorios.forEach(function (campo) {
+    campo.addEventListener("focus", function () {
+      exibirMensagemPopup();
+    });
+
+    campo.addEventListener("input", function () {
+      fecharPopup();
+    });
+
+  });
+
+  // Função para exibir a mensagem de popup
+  function exibirMensagemPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+  }
+
+  // Função para fechar o popup
+  window.fecharPopup = function () {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+  };
+});
